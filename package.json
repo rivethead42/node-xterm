@@ -1,0 +1,29 @@
+{
+  "name": "node-xterm",
+  "version": "1.0.0",
+  "description": "A simple app used to connec to docker contianers.",
+  "main": "app.js",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "express": "^4.15.3",
+    "express-ws": "^3.0.0",
+    "node-pty": "^0.6.10",
+    "socket.io": "^2.0.3",
+    "ssh2": "^0.5.5",
+    "xterm": "^2.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rivethead42/node-xterm.git"
+  },
+  "author": "Travis N. Thomsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rivethead42/node-xterm/issues"
+  },
+  "homepage": "https://github.com/rivethead42/node-xterm#readme"
+}
