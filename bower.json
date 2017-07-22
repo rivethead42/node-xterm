@@ -1,0 +1,20 @@
+{
+  "name": "node-xterm",
+  "description": "A simple app used to connec to docker contianers.",
+  "main": "app.js",
+  "authors": [
+    "Travis N. Thomsen"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rivethead42/node-xterm",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "xterm.js": "^2.8.1"
+  }
+}
