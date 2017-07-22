@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
     <head>
-        <title>xterm.js demo</title>
+        <title>Docker Term</title>
         <link rel="stylesheet" href="bower_components/xterm.js/dist/xterm.css" />
         <link rel="stylesheet" href="bower_components/xterm.js/dist/addons/fullscreen/fullscreen.css" />
+        <link rel="stylesheet" href="style.css" />
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js"></script>
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
         <script src="bower_components/xterm.js/dist/xterm.js" ></script>
@@ -39,6 +40,10 @@
             padding-right: 4px;
         }
 
+        #socket-url {
+          width: 650px;
+        }
+        
         button {
             height: 28px;
             background-color: #ccc;
@@ -56,7 +61,7 @@
       <div class="container">
 
     <h1>
-        xterm.js: socket attach
+        Docker Term
     </h1>
           <p>
               Attach the terminal to a WebSocket terminal stream with ease. Perfect for attaching to your
@@ -68,7 +73,7 @@
     <form id="socket-form">
       <input id="socket-url"
              type="text"
-             placeholder="Enter socket url (e.g. ws://mysock)"
+             placeholder="Enter socket url (e.g. ws://docker_fqdn:port/containers/container_id/attach/ws)"
              autofocus />
       <button>
         Attach

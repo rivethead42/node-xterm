@@ -7,18 +7,8 @@ var pty = require('node-pty');
 var terminals = {},
     logs = {};
 
-//app.use('/build', express.static(__dirname + '/../build'));
-
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
-});
-
-app.get('/test', function(req, res){
-  res.sendFile(__dirname + '/index2.html');
-});
-
-app.get('/docker', function(req, res){
-  res.sendFile(__dirname + '/docker.html');
 });
 
 app.get('/style.css', function(req, res){
@@ -41,6 +31,9 @@ app.get('/bower_components/xterm.js/dist/addons/fullscreen/fullscreen.css', func
   res.sendFile(__dirname + '/bower_components/xterm.js/dist/addons/fullscreen/fullscreen.css');
 });
 
+app.get('/bower_components/xterm.js/dist/addons/fullscreen/fullscreen.js', function(req, res) {
+  res.sendFile(__dirname + '/bower_components/xterm.js/dist/addons/fullscreen/fullscreen.js');
+});
 
 app.get('/bower_components/xterm.js/dist/addons/attach/attach.js', function(req, res){
   res.sendFile(__dirname + '/bower_components/xterm.js/dist/addons/attach/attach.js');
