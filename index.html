@@ -41,7 +41,7 @@
         }
 
         #socket-url {
-          width: 650px;
+          width: 900px;
         }
         
         button {
@@ -73,8 +73,9 @@
     <form id="socket-form">
       <input id="socket-url"
              type="text"
-             placeholder="Enter socket url (e.g. ws://docker_fqdn:port/containers/container_id/attach/ws)"
+             placeholder="Enter url (e.g. ws://docker_fqdn:port/containers/container_id/attach/ws?logs=0&stream=1&stdin=1&stdout=1&stderr=1)"
              autofocus />
+      <p />
       <button>
         Attach
       </button>
